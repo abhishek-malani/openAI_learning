@@ -7,7 +7,8 @@ openai.api_key = os.getenv('OPENAI_API_KEY')
 
 response = openai.Completion.create(
     model="text-davinci-003",
-    prompt ="What is the capital of France?",
+    # prompt ="What is the capital of France?",
+    prompt="Paris is the capital of",
     max_tokens=7,
 )
 print(response)
